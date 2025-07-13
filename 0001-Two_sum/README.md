@@ -1,29 +1,29 @@
-# Solutions in `sol.py`
+# 1. Two Sum
 
-## 1. Two Sum
+## Problem
+Given a list of numbers (`nums`) and a target number (`target`), find the indices of the two numbers in the list that add up to the target. Each input will have exactly one solution, and you cannot use the same element twice.
 
-Given an array of integers `nums` and an integer `target`, return indices of the two numbers such that they add up to `target`.
+## Function Signature
+```python
+def twoSum(nums, target):
+    # returns [index1, index2]
+```
 
-- **Method:** `twoSum(nums, target)`
-- **Example:**
-  - Input: `nums = [2, 7, 11, 15]`, `target = 13`
-  - Output: `[0, 2]`
-- **Constraints:**
-  - 2 <= nums.length <= 10^4
-  - -10^9 <= nums[i] <= 10^9
-  - -10^9 <= target <= 10^9
-  - Only one valid answer exists.
+## Example
+- **Input:**
+  - nums = [2, 7, 11, 15]
+  - target = 13
+- **Output:**
+  - [0, 2]
 
----
+### Step-by-step:
+- nums[0] = 2
+- nums[2] = 11
+- 2 + 11 = 13 (which is the target)
+- So, return [0, 2]
 
-## 2. Container With Most Water
-
-Given an integer array `height` of length `n`, find two lines that together with the x-axis form a container, such that the container contains the most water.
-
-- **Method:** `maxArea(height)`
-- **Example:**
-  - Input: `height = [1,8,6,2,5,4,8,3,7]`
-  - Output: `49`
-- **Constraints:**
-  - 2 <= height.length <= 10^5
-  - 0 <= height[i] <= 10^4 
+## Constraints
+- 2 <= nums.length <= 10,000
+- -1,000,000,000 <= nums[i] <= 1,000,000,000
+- -1,000,000,000 <= target <= 1,000,000,000
+- Only one valid answer exists for each input. 
